@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ReportBeeApp</string>
+    <string name="action_settings">Share</string>
+
+    <string name="title_activity_attend">Attendance</string>
+
+    <string-array name="attendance">
+
+        <item>Present</item>
+        <item>Absent</item>
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>
+
+

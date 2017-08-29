@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.report.MainActivity"
+    android:background="#5ff9cb"
+    >
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/report"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/lo"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="15dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=" MEASURE AND IMPROVE LEARNING"
+        android:id="@+id/textView"
+        android:layout_marginLeft="15dp"
+        android:textColor="#1b1a1a"
+        android:textSize="16dp"
+        android:paddingLeft="16dp"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="15dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="VERIFY"
+
+        android:id="@+id/button"
+        android:background="#035c55"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/editText3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="35dp"
+         />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:hint="Mobile"
+        android:textAlignment="center"
+        android:paddingTop="8dp"
+        android:backgroundTint="#5f5d5d"
+        android:textColorHint="#5f5d5d"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:hint="OTP"
+        android:textAlignment="center"
+        android:backgroundTint="#5f5d5d"
+        android:textColorHint="#5f5d5d"
+        android:inputType="numberPassword"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="By Logging in you agree to our"
+        android:id="@+id/textView2"
+        android:textColor="#1b1a1a"
+        android:paddingLeft="14dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:textSize="11dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="TERMS AND CONDITIONS."
+        android:id="@+id/textView3"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:textColor="#fefefe"
+        android:textSize="11dp"
+        android:layout_marginLeft="5dp"
+        android:onClick="webcom" />
+
+</RelativeLayout>

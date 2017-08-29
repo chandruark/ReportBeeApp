@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.report.Attendance"
+    android:background="#dedede"
+    >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="SAVE"
+        android:id="@+id/button2"
+        android:background="#528ecb"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_alignParentStart="false" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerview"
+        android:theme="@style/Widget.AppCompat.ListView"
+        android:layout_above="@+id/button2"
+        android:background="#ffffff"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/spinner2"
+        android:layout_below="@+id/textView5" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="false"
+        android:background="#d3cfcf"
+        android:layout_marginLeft="-30dp"
+        android:layout_marginRight="-30dp"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignEnd="@+id/textView5"
+        android:layout_marginBottom="-30dp"
+        android:layout_below="@+id/recyclerview"
+        android:layout_marginTop="-10dp"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentEnd="false"
+        android:weightSum="1">
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView5"
+        android:layout_alignParentEnd="true"
+        android:textSize="15dp"
+        android:paddingTop="20dp"
+        android:layout_toEndOf="@+id/spinner2"
+        android:background="#ffffff"
+        android:onClick="Mov"
+        android:text="8/7/2017" />
+
+    <Spinner
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner2"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/textView5"
+        android:background="#ffffff"
+        android:layout_alignParentTop="true"
+        android:spinnerMode="dropdown" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:onClick="cal"
+        android:layout_above="@+id/recyclerview"
+        android:layout_toStartOf="@+id/textView5"
+        android:layout_marginEnd="52dp"
+        android:background="#ffffff" />
+
+</RelativeLayout>
